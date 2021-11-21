@@ -19,8 +19,6 @@ def primeSieve(n):
   
     return numbers
 
-
-
 input = []
 times = []
 
@@ -32,9 +30,7 @@ for i in range(10000, 50000, 5000):
     times.append(toc - tic)
     print(f"{i}: {toc - tic:0.4f} seconds")
 
-
 fig, ax = plt.subplots()  # Create a figure containing a single axes.
 ax.plot(input, times)  # Plot some data on the axes.
 
 plt.show()
-#for i in range(len(primes)): print(primes[i])
