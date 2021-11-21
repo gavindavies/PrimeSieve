@@ -24,13 +24,13 @@ def primeSieve(n):
 input = []
 times = []
 
-for i in range(10000, 100000, 5000):
-    print(f"----{i}----")
+for i in range(10000, 50000, 5000):
     tic = time.perf_counter()
     primes = primeSieve(i)
     toc = time.perf_counter()
     input.append(i)
     times.append(toc - tic)
+    print(f"{i}: {toc - tic:0.4f} seconds")
 
 
 fig, ax = plt.subplots()  # Create a figure containing a single axes.
